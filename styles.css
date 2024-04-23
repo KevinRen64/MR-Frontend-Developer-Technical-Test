@@ -1,0 +1,170 @@
+
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #F6F6F7;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 200px;
+}
+
+.my-cart {
+  text-decoration: none;
+  color: #888888; 
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 700px;
+}
+
+.product-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 30px 200px ;
+}
+
+.product-image-container {
+  width: 50%; 
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.product-details {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.price {
+  border-top: 1px solid rgba(204, 204, 204, 0.2);
+  border-bottom: 1px solid rgba(204, 204, 204, 0.2);
+}
+
+
+.description {
+  color: #888888;
+}
+
+.size-container {
+  display:flex;
+  flex-direction: 1;
+}
+
+.size {
+  color: #888888;
+}
+
+.red-star-mark {
+  color: #C90000;
+}
+
+.size-buttons {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.size-button {
+  text-decoration: none;
+  color: #888888;
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  padding: 10px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-button {
+  text-decoration: none;
+  color: #222222;
+  border: 3px solid #222222;
+  font-weight: bold;
+  padding: 10px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #222222;
+  color: #F6F6F7;
+}
+
+.error-message {
+  display: none;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.selected-size {
+  border: 1px solid #222222;
+}
+
+.mini-cart {
+  display: none;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  border: 1px solid #888888;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: row;
+  padding-right: 100px;
+}
+
+.product-info > img {
+  width: 100px;
+  height: 150px;
+  
+}
+
+.product-price {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding-right: 100px; 
+  }
+  
+  .product-container {
+    padding: 30px 100px; 
+  }
+  
+  .product-details {
+    padding-left: 50px; 
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-right: 20px; 
+  }
+  
+  .product-container {
+    display: flex;
+    flex-direction: column; 
+    padding: 30px 20px; 
+  }
+  
+  .product-image-container,
+  .product-details {
+    width: 100%; 
+    padding: 0; 
+  }
+  
+  .product-details {
+    padding-top: 20px; 
+  }
+}
+
+
+
